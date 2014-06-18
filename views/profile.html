@@ -1,0 +1,15 @@
+{% extends '_layout.html' %}
+
+{% block title %} Profile {% endblock %}
+
+{% block content %}
+
+	<h1>Profile</h1>
+	<p>Hello {{ user }}</p>
+
+	<strong>id</strong>: {{ user._id }}<br>
+	<strong>email</strong>: {{ user.local.email }}<br>
+	<strong>password</strong>: {{ user.local.password }}
+
+{% endblock %}
+

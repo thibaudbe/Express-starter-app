@@ -1,0 +1,22 @@
+{% extends '_layout.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+	{# http://paularmstrong.github.io/swig/docs/tags/#else #}
+	<h1>{{ title }}</h1>
+	<p>Welcome to {{ title }}</p>
+
+	<ul>
+		<li><a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a></li>
+		<li><a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a></li>
+	</ul>
+
+	<ul>
+		<li><a href="/profile">Profile</a></li>
+		<li><a href="/flash">Flash</a></li>
+		<li><a href="/dfsdf">Error</a></li>
+	</ul>
+
+{% endblock %}

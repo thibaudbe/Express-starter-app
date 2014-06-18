@@ -1,0 +1,12 @@
+{% extends '_layout.html' %}
+
+{% block title %} Error {{ error.status }} {% endblock %}
+
+{% block content %}
+
+  <h1>{{ error.status }}</h1>
+  <pre>
+    {{ error.stack }}
+  </pre>
+
+{% endblock %}
